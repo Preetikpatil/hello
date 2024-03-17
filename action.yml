@@ -29,7 +29,7 @@ inputs:
         description: 'Auth Password'
         required: false
     timeout:
-        description: 'Request Timeout in Sec'
+        description: 'Request Timeout in milliseconds'
         required: false
         default: '5000'
     bearerToken:
@@ -75,5 +75,5 @@ outputs:
     headers:
         description: 'HTTP Response Headers'
 runs:
-    using: 'node16'
+    using: 'node20'
     main: 'dist/index.js'
